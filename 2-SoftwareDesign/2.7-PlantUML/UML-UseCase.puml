@@ -4,14 +4,14 @@ title Usecase Diagram
 
 left to right direction
 
-actor Teenager
+actor Sportsman
 
 rectangle Software {
 
-    usecase (pay for the order)
+    usecase (pay the bill)
     usecase (authorization)
 
-   :Teenager: -- (pay for the order)
+   :Sportsman: -- (pay the bill)
    (pay for the order) .> (authorization) : include
 }
 
