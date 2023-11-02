@@ -8,7 +8,7 @@ skinparam componentStyle uml1
 
 node "<<Web-page>>" as wp {
     node "<<OS Windows, OS Linux, Mac OS>>" as w1 {
-        component [*.js(Angular)]
+        component [*.js(Vue)]
     }
 }
 
@@ -30,7 +30,7 @@ node "<<Server 1>>" as serv1 {
 
 node "<<Server 3>>" as serv3 {
     node "<<OS Linux>>" as w3 {
-      node "<<DataBase Server MongoDB>>"{
+      node "<<PostgreSQL>>"{
         component [Relation Database]
       }
     }
