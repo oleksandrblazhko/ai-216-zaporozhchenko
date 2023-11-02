@@ -5,7 +5,7 @@ title Activity Diagram (method order)
 start
 
 :Software takes the payment data;
-note right: the program takes user data (card number, card validity period and cvv2)
+note right: the program takes user data
 
 :Software enters data into the electronic payment system;
 
@@ -17,7 +17,7 @@ if (Is Data Correct?) then (yes)
     :return error number;
 endif  
 else (no)
-  :Your data is incorrect :(;
+  :Error! Your data is incorrect!;
   :return error number;
 endif
 
