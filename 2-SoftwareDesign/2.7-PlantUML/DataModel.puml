@@ -9,6 +9,7 @@ entity "User" as us {
     num_card
     val_per
     cvv2
+    pin_code
     --
     (FK) customer_id
 }
@@ -23,16 +24,20 @@ entity "Customer" as cus {
     num_card
     val_per
     cvv2
+    pin_code
     telephone
+    email
     --
     (FK) operator_id
 }
 
-entity "Purifier" as putis {
+entity "Food" as fo {
     (PK) purifier_id
     --
     name
-    price
+    quantity
+    weight
+    cost
     --
     (FK) customer_id
 }
@@ -43,5 +48,5 @@ cus -- us
 cus --{ us
 op --{ cus
 cus -- op
-cus --{ putis
+cus --{ fo
 @enduml
