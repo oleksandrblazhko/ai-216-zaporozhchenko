@@ -5,9 +5,9 @@ title Activity Diagram (method order)
 start
 
 :Software takes the payment data;
-note right: the program takes user data
+note right: the program takes food data
 
-:Software enters data into the electronic payment system;
+:Software enters data into the electronic system;
 
 if (Is Data Correct?) then (yes)
   if (Is the transaction successful?) then (yes)
