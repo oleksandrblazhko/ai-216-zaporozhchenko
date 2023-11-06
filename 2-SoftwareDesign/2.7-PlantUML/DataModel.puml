@@ -42,11 +42,7 @@ entity "Food" as fo {
     (FK) customer_id
 }
 
-op --{ us
-op -- us
-cus -- us
-cus --{ us
 op --{ cus
-cus -- op
+cus -- us
 cus --{ fo
 @enduml
