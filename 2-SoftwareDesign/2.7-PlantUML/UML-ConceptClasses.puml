@@ -1,0 +1,35 @@
+@startuml
+
+hide circle
+title Classes
+
+Class User {
+    num_card
+    val_per
+    cvv2
+    pin_code
+}
+
+Class Operator {
+    
+}
+
+Class Customer {
+    telephone
+    email
+}
+
+Class Food {
+    name
+    quantity
+    weight
+    cost
+}
+
+User <|-- Customer
+
+Operator"1" --> "+"Customer : to notify
+Customer"1" --> "1"Operator : to provide
+Customer"1" --> "+"Food : to order 
+
+@enduml
