@@ -19,7 +19,7 @@ CREATE OR REPLACE TYPE Operator AS OBJECT (
 ); 
 /
 
-CREATE OR REPLACE TYPE Purifier AS OBJECT (
+CREATE OR REPLACE TYPE Food AS OBJECT (
     name VARCHAR(100),
     quantity INT,
     weight INT,
